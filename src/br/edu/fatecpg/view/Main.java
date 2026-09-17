@@ -1,0 +1,117 @@
+package br.edu.fatecpg.view;
+import br.edu.fatecpg.model.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("---------------- PROFESSOR ----------------");
+		Professor Professor1 = new Professor(
+				67, 
+				true, 
+				true, 
+				"Roblox"
+				);
+		Professor Professor2 = new Professor(
+				20, 
+				false, 
+				false, 
+				"Portugues"
+				);
+		
+		System.out.println("Esse professor tem " + Professor1.idade + " Anos.");
+		Professor1.darAula();
+		
+		System.out.println("\nEsse professor tem " + Professor2.idade + " Anos.");
+		Professor2.darAula();
+		
+		System.out.println("\n---------------- ESTUDANTE ----------------");
+		
+		Estudante Estudante1 = new Estudante(
+			    92.00,
+			    "IFEM",
+			    new double[]{5.5, 3.5, 9.0, 10.0},
+			    123456789,
+			    new String[]{"Matemática", "Português", "Programação", "Banco de Dados"}
+			);
+		Estudante Estudante2 = new Estudante(
+			    80.00,
+			    "Administração",
+			    new double[]{7.0, 8.5, 6.0, 9.0},
+			    987654321,
+			    new String[]{"Matemática", "Português", "Marketing", "Excel"}
+			);
+		
+		System.out.println("Este estudante está fazendo " + Estudante1.boletim);
+		Estudante1.estudar();
+		
+		System.out.println("Este estudante está fazendo " + Estudante2.boletim);
+		Estudante2.estudar();
+		
+System.out.println("\n---------------- MÉDICO ----------------");
+		
+Medico Medico1 = new Medico(
+	    "Cardiologia",
+	    "Medicina",
+	    "10 anos",
+	    "CRM123456"
+	);
+
+Medico Medico2 = new Medico(
+	    "Dermatologia",
+	    "Medicina",
+	    "5 anos",
+	    ""
+	);
+		
+		System.out.println("\nEsse médico tem especialidade em " + Medico1.especialidade);
+		Medico1.administrarMedicamento();
+		
+		System.out.println("\nEsse médico tem especialidade em " + Medico2.especialidade);
+		Medico2.administrarMedicamento();
+		
+		System.out.println("\n---------------- ENGENHEIRO ----------------");
+		
+		Engenheiro Engenheiro1 = new Engenheiro(
+			    "Engenharia Civil",
+			    "Engenharia",
+			    "Projetista",
+			    "CREA123456"
+			);
+
+		Engenheiro Engenheiro2 = new Engenheiro(
+			    "Engenharia Mecânica",
+			    "Engenharia",
+			    "Manutenção",
+			    "CREA987654"
+			);
+				
+				System.out.println("\nEsse Engenheiro tem função de " + Engenheiro1.funcao);
+				Engenheiro1.planejar();
+				
+				System.out.println("\nEsse Engenheiro tem função de " + Engenheiro2.funcao);
+				Engenheiro2.planejar();
+				
+				System.out.println("\n---------------- Ator ----------------");
+				
+				Ator Ator1 = new Ator(
+					    "DRT123456",
+					    "Artes Cênicas",
+					    "Teatro",
+					    "João"
+					);
+
+					Ator Ator2 = new Ator(
+					    "DRT654321",
+					    "Artes Cênicas",
+					    "Cinema",
+					    "Pedro"
+					);
+						
+						System.out.println("\nEsse Ator tem especialidade em " + Ator1.Especialidade);
+						Ator1.atuar();
+						
+						System.out.println("\nEsse Ator tem especialidade em " + Ator2.Especialidade);
+						Ator2.atuar();
+	}
+
+}
