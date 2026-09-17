@@ -9,6 +9,7 @@ build/
 .metadata/
 .settings/
 .classpath
+.classpath/
 .project
 .recommenders/
 
