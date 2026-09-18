@@ -222,13 +222,7 @@ public class Main {
 						
 		System.out.println("\nEsse piloto está na categoria de " + Piloto2.categoria);
 		Piloto2.Pilotar();
-
-		package br.edu.fatecpg.view;
-import br.edu.fatecpg.model.*;
-
-public class Main {
-
-	public static void main(String[] args) {
+		
 		System.out.println("---------------- FOTOGRAFO ----------------");
         
 		Fotografo Fotografo1 = new Fotografo(
