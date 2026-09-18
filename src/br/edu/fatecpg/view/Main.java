@@ -200,6 +200,28 @@ public class Main {
 						
 		System.out.println("\nEsse motorista tem a experiência: " + Motorista2.experiencia);
 		Motorista2.Transportar();
+		
+		System.out.println("\n---------------- PILOTO ----------------");
+		
+		Piloto Piloto1 = new Piloto(
+				"PLA",
+				"Boeing 737-800 / Airbus A320",
+				new String[]{"Total: 4500h", "Voo Noturno: 1200h", "Instrumentos: 1800h"},
+				"Comandante Internacional"
+				);
+
+		Piloto Piloto2 = new Piloto(
+				"PPA / PAG",
+				"Embraer EMB-202 Ipanema",
+				new String[] {"Total: 850h", "Operações Agrícolas: 600h", "Voo Visual: 850h"},
+				"Piloto Operacional Sênior"
+				);
+						
+		System.out.println("\nEsse piloto está na categoria de " + Piloto1.categoria);
+		Piloto1.Pousar();
+						
+		System.out.println("\nEsse piloto está na categoria de " + Piloto2.categoria);
+		Piloto2.Pilotar();
 	}
 
 }
