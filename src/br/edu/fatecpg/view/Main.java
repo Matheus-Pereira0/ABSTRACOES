@@ -156,6 +156,28 @@ public class Main {
 						
 		System.out.println("\nEsse Polical tem a patente: " + Policial2.patente);
 		Policial2.Investigar();
+		
+		System.out.println("\n---------------- BOMBEIRO ----------------");
+		
+		Bombeiro Bombeiro1 = new Bombeiro(
+				"Cabo",
+				"Salvamento Aquático e Atendimento Pré-Hospitalar",
+				"GMAR",
+				"Sobrevivência em Mar Aberto e Pilotagem de Embarcações de Resgate"
+				);
+
+		Bombeiro Bombeiro2 = new Bombeiro(
+				"Tenente",
+				"Combate a Incêndios Florestais e Operações Heliotransportadas",
+				"Prevfogo",
+				"Táticas de Contra-fogo, Sobrevivência em Selva e Rapel de Aeronaves"
+				);
+						
+		System.out.println("\nEsse bombeiro está na unidade: " + Bombeiro1.unidade);
+		Bombeiro1.CombaterIncendio();
+						
+		System.out.println("\nEsse bombeiro está na unidade: " + Bombeiro2.unidade);
+		Bombeiro2.CombaterIncendio();
 	}
 
 }
