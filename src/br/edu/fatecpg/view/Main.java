@@ -47,22 +47,22 @@ public class Main {
 		System.out.println("Este estudante está fazendo " + Estudante2.boletim);
 		Estudante2.estudar();
 		
-System.out.println("\n---------------- MÉDICO ----------------");
+		System.out.println("\n---------------- MÉDICO ----------------");
+				
+		Medico Medico1 = new Medico(
+			    "Cardiologia",
+			    "Medicina",
+			    "10 anos",
+			    "CRM123456"
+			);
 		
-Medico Medico1 = new Medico(
-	    "Cardiologia",
-	    "Medicina",
-	    "10 anos",
-	    "CRM123456"
-	);
-
-Medico Medico2 = new Medico(
-	    "Dermatologia",
-	    "Medicina",
-	    "5 anos",
-	    ""
-	);
-		
+		Medico Medico2 = new Medico(
+			    "Dermatologia",
+			    "Medicina",
+			    "5 anos",
+			    ""
+			);
+				
 		System.out.println("\nEsse médico tem especialidade em " + Medico1.especialidade);
 		Medico1.administrarMedicamento();
 		
@@ -85,33 +85,143 @@ Medico Medico2 = new Medico(
 			    "CREA987654"
 			);
 				
-				System.out.println("\nEsse Engenheiro tem função de " + Engenheiro1.funcao);
-				Engenheiro1.planejar();
+		System.out.println("\nEsse Engenheiro tem função de " + Engenheiro1.funcao);
+		Engenheiro1.planejar();
+			
+		System.out.println("\nEsse Engenheiro tem função de " + Engenheiro2.funcao);
+		Engenheiro2.planejar();
 				
-				System.out.println("\nEsse Engenheiro tem função de " + Engenheiro2.funcao);
-				Engenheiro2.planejar();
+		System.out.println("\n---------------- ATOR ----------------");
 				
-				System.out.println("\n---------------- Ator ----------------");
-				
-				Ator Ator1 = new Ator(
-					    "DRT123456",
-					    "Artes Cênicas",
-					    "Teatro",
-					    "João"
-					);
+		Ator Ator1 = new Ator(
+			    "DRT123456",
+			    "Artes Cênicas",
+			    "Teatro",
+			    "João"
+			);
 
-					Ator Ator2 = new Ator(
-					    "DRT654321",
-					    "Artes Cênicas",
-					    "Cinema",
-					    "Pedro"
-					);
+		Ator Ator2 = new Ator(
+			    "DRT654321",
+			    "Artes Cênicas",
+			    "Cinema",
+			    "Pedro"
+			);
 						
-						System.out.println("\nEsse Ator tem especialidade em " + Ator1.Especialidade);
-						Ator1.atuar();
+		System.out.println("\nEsse Ator tem especialidade em " + Ator1.Especialidade);
+		Ator1.atuar();
 						
-						System.out.println("\nEsse Ator tem especialidade em " + Ator2.Especialidade);
-						Ator2.atuar();
+		System.out.println("\nEsse Ator tem especialidade em " + Ator2.Especialidade);
+		Ator2.atuar();
+		
+		System.out.println("\n---------------- CANTOR ----------------");
+		
+		Cantor Cantor1 = new Cantor(
+				"Tenor",
+				"Metal",
+				new String[] {"Eagle Fly Free", "Crazy Train"},
+				"Estética Bgseada em um contraste e alta densidade."
+				);
+
+		Cantor Cantor2 = new Cantor(
+				"Meio-Soprano",
+				"City Japanese Pop",
+				new String[] {"Mayonaka no Door / Stay With Me", "Plastic Love", "Neat Na Gojo San-Ji"},
+				"Estética retrô de Tóquio à noite."
+				);
+						
+		System.out.println("\nEsse Cantor tem a voz: " + Cantor1.voz);
+		Cantor1.Cantar();
+						
+		System.out.println("\nEsse Cantor tem a voz: " + Cantor2.voz);
+		Cantor2.Ensaiar();
+		
+		System.out.println("\n---------------- POLICIAL ----------------");
+		
+		Policial Policial1 = new Policial(
+				"Sargento",
+				"BOPE",
+				"Atirador de Elite",
+				"Operações Urbanas em Áreas de Alto Risco"
+				);
+
+		Policial Policial2 = new Policial(
+				"Inspetor",
+				"DEIC",
+				"Investigador de Crimes Cibernéticos",
+				"Análise de Dados Forenses e Criptoativos"
+				);
+						
+		System.out.println("\nEsse Polical tem a patente: " + Policial1.patente);
+		Policial1.Patrulhar();
+						
+		System.out.println("\nEsse Polical tem a patente: " + Policial2.patente);
+		Policial2.Investigar();
+		
+		System.out.println("\n---------------- BOMBEIRO ----------------");
+		
+		Bombeiro Bombeiro1 = new Bombeiro(
+				"Cabo",
+				"Salvamento Aquático e Atendimento Pré-Hospitalar",
+				"GMAR",
+				"Sobrevivência em Mar Aberto e Pilotagem de Embarcações de Resgate"
+				);
+
+		Bombeiro Bombeiro2 = new Bombeiro(
+				"Tenente",
+				"Combate a Incêndios Florestais e Operações Heliotransportadas",
+				"Prevfogo",
+				"Táticas de Contra-fogo, Sobrevivência em Selva e Rapel de Aeronaves"
+				);
+						
+		System.out.println("\nEsse bombeiro está na unidade: " + Bombeiro1.unidade);
+		Bombeiro1.CombaterIncendio();
+						
+		System.out.println("\nEsse bombeiro está na unidade: " + Bombeiro2.unidade);
+		Bombeiro2.CombaterIncendio();
+		
+		System.out.println("\n---------------- MOTORISTA ----------------");
+		
+		Motorista Motorista1 = new Motorista(
+				"D",
+				"Ambulância de Suporte Avançado",
+				"Base Central -> Hospital de Clínicas via Avenida Paulista",
+				"5 anos atuando como condutor de veículos de emergência no SAMU"
+				);
+
+		Motorista Motorista2 = new Motorista(
+				"E",
+				"Caminhão Carreta Bitrem Randon",
+				"Terminal Portuário de Santos -> Distrito Industrial de Campinas via Rodovia dos Bandeirantes",
+				"12 anos de experiência em transporte rodoviário de cargas pesadas"
+				);
+						
+		System.out.println("\nEsse motorista tem a experiência: " + Motorista1.experiencia);
+		Motorista1.Transportar();
+						
+		System.out.println("\nEsse motorista tem a experiência: " + Motorista2.experiencia);
+		Motorista2.Transportar();
+		
+		System.out.println("\n---------------- PILOTO ----------------");
+		
+		Piloto Piloto1 = new Piloto(
+				"PLA",
+				"Boeing 737-800 / Airbus A320",
+				new String[]{"Total: 4500h", "Voo Noturno: 1200h", "Instrumentos: 1800h"},
+				"Comandante Internacional"
+				);
+
+		Piloto Piloto2 = new Piloto(
+				"PPA / PAG",
+				"Embraer EMB-202 Ipanema",
+				new String[] {"Total: 850h", "Operações Agrícolas: 600h", "Voo Visual: 850h"},
+				"Piloto Operacional Sênior"
+				);
+						
+		System.out.println("\nEsse piloto está na categoria de " + Piloto1.categoria);
+		Piloto1.Pousar();
+						
+		System.out.println("\nEsse piloto está na categoria de " + Piloto2.categoria);
+		Piloto2.Pilotar();
 	}
 
 }
