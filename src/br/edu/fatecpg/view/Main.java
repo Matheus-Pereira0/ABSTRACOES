@@ -91,7 +91,7 @@ public class Main {
 		System.out.println("\nEsse Engenheiro tem função de " + Engenheiro2.funcao);
 		Engenheiro2.planejar();
 				
-		System.out.println("\n---------------- Ator ----------------");
+		System.out.println("\n---------------- ATOR ----------------");
 				
 		Ator Ator1 = new Ator(
 			    "DRT123456",
@@ -135,6 +135,27 @@ public class Main {
 		System.out.println("\nEsse Cantor tem a voz: " + Cantor2.voz);
 		Cantor2.Ensaiar();
 		
+		System.out.println("\n---------------- POLICIAL ----------------");
+		
+		Policial Policial1 = new Policial(
+				"Sargento",
+				"BOPE",
+				"Atirador de Elite",
+				"Operações Urbanas em Áreas de Alto Risco"
+				);
+
+		Policial Policial2 = new Policial(
+				"Inspetor",
+				"DEIC",
+				"Investigador de Crimes Cibernéticos",
+				"Análise de Dados Forenses e Criptoativos"
+				);
+						
+		System.out.println("\nEsse Polical tem a patente: " + Policial1.patente);
+		Policial1.Patrulhar();
+						
+		System.out.println("\nEsse Polical tem a patente: " + Policial2.patente);
+		Policial2.Investigar();
 	}
 
 }
