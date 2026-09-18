@@ -5,7 +5,7 @@ public class Politico {
     public String cargo; 
     public String partido; 
     public String esferaAtuacao; 
-    public String mandato = false; 
+    public String mandato; 
  
     public Politico(String cargo, String partido, String esferaAtuacao, String mandato) { 
  
