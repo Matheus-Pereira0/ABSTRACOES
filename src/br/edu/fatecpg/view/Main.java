@@ -4,114 +4,132 @@ import br.edu.fatecpg.model.*;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("---------------- PROFESSOR ----------------");
-		Professor Professor1 = new Professor(
-				67, 
-				true, 
-				true, 
-				"Roblox"
-				);
-		Professor Professor2 = new Professor(
-				20, 
-				false, 
-				false, 
-				"Portugues"
-				);
-		
-		System.out.println("Esse professor tem " + Professor1.idade + " Anos.");
-		Professor1.darAula();
-		
-		System.out.println("\nEsse professor tem " + Professor2.idade + " Anos.");
-		Professor2.darAula();
-		
-		System.out.println("\n---------------- ESTUDANTE ----------------");
-		
-		Estudante Estudante1 = new Estudante(
-			    92.00,
-			    "IFEM",
-			    new double[]{5.5, 3.5, 9.0, 10.0},
-			    123456789,
-			    new String[]{"Matemática", "Português", "Programação", "Banco de Dados"}
-			);
-		Estudante Estudante2 = new Estudante(
-			    80.00,
-			    "Administração",
-			    new double[]{7.0, 8.5, 6.0, 9.0},
-			    987654321,
-			    new String[]{"Matemática", "Português", "Marketing", "Excel"}
-			);
-		
-		System.out.println("Este estudante está fazendo " + Estudante1.boletim);
-		Estudante1.estudar();
-		
-		System.out.println("Este estudante está fazendo " + Estudante2.boletim);
-		Estudante2.estudar();
-		
-System.out.println("\n---------------- MÉDICO ----------------");
-		
-Medico Medico1 = new Medico(
-	    "Cardiologia",
-	    "Medicina",
-	    "10 anos",
-	    "CRM123456"
-	);
+		System.out.println("---------------- FOTOGRAFO ----------------");
+        
+		Fotografo Fotografo1 = new Fotografo(
+        "Retrato",
+        "Canon EOS R5",
+        "Minimalista",
+        "Lightroom"
+        );
 
-Medico Medico2 = new Medico(
-	    "Dermatologia",
-	    "Medicina",
-	    "5 anos",
-	    ""
-	);
+        Fotografo Fotografo2 = new Fotografo(
+        "Fotografia de rua",
+        "Sony Alpha 7 III",
+        "Documental",
+        "Photoshop"
+        );
 		
-		System.out.println("\nEsse médico tem especialidade em " + Medico1.especialidade);
-		Medico1.administrarMedicamento();
-		
-		System.out.println("\nEsse médico tem especialidade em " + Medico2.especialidade);
-		Medico2.administrarMedicamento();
-		
-		System.out.println("\n---------------- ENGENHEIRO ----------------");
-		
-		Engenheiro Engenheiro1 = new Engenheiro(
-			    "Engenharia Civil",
-			    "Engenharia",
-			    "Projetista",
-			    "CREA123456"
-			);
+		System.out.println("\nEsse Fotografo trabalha com " + Fotografo1.tipoFotografia + " utilizando " + Fotografo1.equipamento);
+        Fotografo1.fotografar();
 
-		Engenheiro Engenheiro2 = new Engenheiro(
-			    "Engenharia Mecânica",
-			    "Engenharia",
-			    "Manutenção",
-			    "CREA987654"
-			);
-				
-				System.out.println("\nEsse Engenheiro tem função de " + Engenheiro1.funcao);
-				Engenheiro1.planejar();
-				
-				System.out.println("\nEsse Engenheiro tem função de " + Engenheiro2.funcao);
-				Engenheiro2.planejar();
-				
-				System.out.println("\n---------------- Ator ----------------");
-				
-				Ator Ator1 = new Ator(
-					    "DRT123456",
-					    "Artes Cênicas",
-					    "Teatro",
-					    "João"
-					);
 
-					Ator Ator2 = new Ator(
-					    "DRT654321",
-					    "Artes Cênicas",
-					    "Cinema",
-					    "Pedro"
-					);
+        System.out.println("\nEsse Fotografo trabalha com " + Fotografo2.tipoFotografia + " utilizando " + Fotografo2.equipamento);
+        Fotografo2.fotografar();
+
+		
+// COLOCAR AS CARASCTICAS
+
+		System.out.println("\n---------------- JORNALISTA ----------------");
+		
+		Jornalista Jornalista1 = new Jornalista(
+        "Política nacional",
+        "Jornal",
+        "Política",
+        "Impresso"
+        );
+
+        Jornalista Jornalista2 = new Jornalista(
+        "Esportes",
+        "Televisão",
+        "Futebol",
+        "Audiovisual"
+        );
+		
+		System.out.println("\nEsse Jornalista atua na área de " + Jornalista1.areaDeCobertura + " pelo " + Jornalista1.veiculoComunicacao);
+        Jornalista1.entrevistar();
+
+
+        System.out.println("\nEsse Jornalista atua na área de " + Jornalista2.areaDeCobertura + " pela " + Jornalista2.veiculoComunicacao);
+        Jornalista2.entrevistar();
+
+		
+
+
+        System.out.println("\n---------------- ATLETA ----------------");
+		
+        Atleta Atleta1 = new Atleta(
+        "Futebol",
+        "Atacante",
+        "Profissional",
+        "Excelente"
+        );
+
+        Atleta Atleta2 = new Atleta(
+        "Basquete",
+        "Armador",
+        "Amador",
+        "Bom"
+        );
+		
+		System.out.println("\nEsse Atleta pratica " + Atleta1.modalidade + " e joga como " + Atleta1.posicao);
+        Atleta1.treinar();
+
+
+        System.out.println("\nEsse Atleta pratica " + Atleta2.modalidade + " e joga como " + Atleta2.posicao);
+        Atleta2.treinar();
+
+		
+
+
+		System.out.println("\n---------------- POLITICO ----------------");
+		
+		Politico Politico1 = new Politico(
+        "Vereador",
+        "Partido Verde",
+        "Municipal",
+        "2024-2028"
+        );
+
+        Politico Politico2 = new Politico(
+        "Deputado Federal",
+        "Partido Social Democrático",
+        "Federal",
+        "2023-2027"
+        );
+				
+		System.out.println("\nEsse Politico ocupa o cargo de " + Politico1.cargo + " e atua na esfera " + Politico1.esferaAtuacao);
+        Politico1.proporLeis();
+
+
+        System.out.println("\nEsse Politico ocupa o cargo de " + Politico2.cargo + " e atua na esfera " + Politico2.esferaAtuacao);
+        Politico2.proporLeis();
+
+
+
+		System.out.println("\n---------------- PROGRAMADOR ----------------");
+				
+		Programador Programador1 = new Programador(
+        "Java",
+        "Desenvolvimento Web",
+        "Spring",
+        "3 anos"
+        );
+
+        Programador Programador2 = new Programador(
+        "C#",
+        "Desenvolvimento de Sistemas",
+        ".NET",
+        "1 ano"
+        );
 						
-						System.out.println("\nEsse Ator tem especialidade em " + Ator1.Especialidade);
-						Ator1.atuar();
-						
-						System.out.println("\nEsse Ator tem especialidade em " + Ator2.Especialidade);
-						Ator2.atuar();
+		System.out.println("\nEsse Programador trabalha com " + Programador1.linguagem + " na área de " + Programador1.area);
+        Programador1.programar();
+
+
+        System.out.println("\nEsse Programador trabalha com " + Programador2.linguagem + " na área de " + Programador2.area);
+        Programador2.programar();
+
 	}
 
 }
