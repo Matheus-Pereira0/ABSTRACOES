@@ -222,6 +222,120 @@ public class Main {
 						
 		System.out.println("\nEsse piloto está na categoria de " + Piloto2.categoria);
 		Piloto2.Pilotar();
+
+				System.out.println("\n---------------- ADVOGADO ----------------");
+		
+		Advogado Advogado1 = new Advogado(
+				"Direito Criminal",
+				"Direito Penal",
+				"OAB123456",
+				"Pessoa Física"
+		);
+
+		Advogado Advogado2 = new Advogado(
+				"Direito Trabalhista",
+				"Direito do Trabalho",
+				"OAB654321",
+				"Empresa"
+		);
+		
+		System.out.println("\nEsse Advogado atua na área de " + Advogado1.areaJuridica);
+		Advogado1.defender();
+
+		System.out.println("\nEsse Advogado atua na área de " + Advogado2.areaJuridica);
+		Advogado2.representar();
+
+
+		System.out.println("\n---------------- JUIZ ----------------");
+		
+		Juiz Juiz1 = new Juiz(
+				"1ª Vara Criminal",
+				"Direito Criminal",
+				"Santos",
+				"Primeira Instância"
+		);
+
+		Juiz Juiz2 = new Juiz(
+				"2ª Vara Civil",
+				"Direito Civil",
+				"Praia Grande",
+				"Primeira Instância"
+		);
+		
+		System.out.println("\nEsse Juiz trabalha na " + Juiz1.vara);
+		Juiz1.julgar();
+
+		System.out.println("\nEsse Juiz trabalha na " + Juiz2.vara);
+		Juiz2.sentenciar();
+
+
+		System.out.println("\n---------------- ARQUITETO ----------------");
+		
+		Arquiteto Arquiteto1 = new Arquiteto(
+				"Arquiteto e Urbanista",
+				"CAU123456",
+				"Arquitetura de Interiores",
+				"Residencial"
+		);
+
+		Arquiteto Arquiteto2 = new Arquiteto(
+				"Arquiteto e Urbanista",
+				"CAU654321",
+				"Urbanismo",
+				"Comercial"
+		);
+		
+		System.out.println("\nEsse Arquiteto tem especialização em " + Arquiteto1.especializacao);
+		Arquiteto1.projetar();
+
+		System.out.println("\nEsse Arquiteto tem especialização em " + Arquiteto2.especializacao);
+		Arquiteto2.planejar();
+
+
+		System.out.println("\n---------------- CIENTISTA ----------------");
+		
+		Cientista Cientista1 = new Cientista(
+				"Biologia",
+				"Biomedicina",
+				"Genética",
+				"Laboratório de Biologia"
+		);
+
+		Cientista Cientista2 = new Cientista(
+				"Química",
+				"Química",
+				"Reações Químicas",
+				"Laboratório de Química"
+		);
+		
+		System.out.println("\nEsse Cientista atua na área de " + Cientista1.areaPesquisa);
+		Cientista1.pesquisar();
+
+		System.out.println("\nEsse Cientista atua na área de " + Cientista2.areaPesquisa);
+		Cientista2.experimentar();
+
+
+		System.out.println("\n---------------- PINTOR ----------------");
+		
+		Pintor Pintor1 = new Pintor(
+				"Pintura a Óleo",
+				"Tinta e Tela",
+				"Realismo",
+				"Retratos"
+		);
+
+		Pintor Pintor2 = new Pintor(
+				"Aquarela",
+				"Tinta e Papel",
+				"Abstrato",
+				"Paisagens"
+		);
+		
+		System.out.println("\nEsse Pintor utiliza a técnica " + Pintor1.tecnicaUtilizada);
+		Pintor1.pintar();
+
+		System.out.println("\nEsse Pintor utiliza a técnica " + Pintor2.tecnicaUtilizada);
+		Pintor2.restaurar();
 		
 		System.out.println("---------------- FOTOGRAFO ----------------");
         
