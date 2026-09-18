@@ -178,6 +178,28 @@ public class Main {
 						
 		System.out.println("\nEsse bombeiro está na unidade: " + Bombeiro2.unidade);
 		Bombeiro2.CombaterIncendio();
+		
+		System.out.println("\n---------------- MOTORISTA ----------------");
+		
+		Motorista Motorista1 = new Motorista(
+				"D",
+				"Ambulância de Suporte Avançado",
+				"Base Central -> Hospital de Clínicas via Avenida Paulista",
+				"5 anos atuando como condutor de veículos de emergência no SAMU"
+				);
+
+		Motorista Motorista2 = new Motorista(
+				"E",
+				"Caminhão Carreta Bitrem Randon",
+				"Terminal Portuário de Santos -> Distrito Industrial de Campinas via Rodovia dos Bandeirantes",
+				"12 anos de experiência em transporte rodoviário de cargas pesadas"
+				);
+						
+		System.out.println("\nEsse motorista tem a experiência: " + Motorista1.experiencia);
+		Motorista1.Transportar();
+						
+		System.out.println("\nEsse motorista tem a experiência: " + Motorista2.experiencia);
+		Motorista2.Transportar();
 	}
 
 }
